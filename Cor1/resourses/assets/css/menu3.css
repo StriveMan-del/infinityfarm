@@ -1,0 +1,607 @@
+* {
+
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #004bff, #05fcff);
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+}
+.all {
+    flex-grow: 1;
+}
+/**
+ registration
+**/
+.okno {
+    width: fit-content;
+    height: fit-content;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    z-index: 2;
+}
+
+.zatem {
+    background: linear-gradient(to right, #004bff, #05fcff);
+    width: 100%;
+    height: 200%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 1;
+}
+
+.exit {
+    font-size: 20pt;
+    position: fixed;
+    text-align: right;
+    right: 25px;
+    top: 10px;
+    border-color: white;
+    border-radius: 5px;
+    background: white;
+    color: black;
+    border-style: none;
+    width:25px;
+}
+
+.exit:hover {
+    border-color: black;
+    cursor: pointer;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.pp {
+    font-size: 25pt;
+    text-align: center;
+}
+
+.forma{
+    text-align: center;
+    background-color: white;
+    border-radius: 25px;
+    width: min-content;
+    height: auto;
+    padding: 17px;
+}
+
+.form {
+    padding: 10px;
+    text-align: left;
+
+}
+
+.form > input {
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 20pt;
+    padding: 2px;
+    width: 360px;
+}
+
+.form > p {
+    font-size: 15pt;
+    margin: 0;
+    text-align: left;
+}
+
+#sub {
+    margin: 5px;
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    -webkit-border-radius: 31;
+    -moz-border-radius: 31;
+    border-radius: 31px;
+    text-shadow: 0px 0px 3px #666666;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    text-hover: #ffffff;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.sub {
+    margin: 5px;
+    -webkit-border-radius: 31;
+    -moz-border-radius: 31;
+    border-radius: 10px;
+    color: #ffffff;
+    background: #016fff;
+    text-decoration: none;
+    border-color: white;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    border:none;
+}
+
+.sub:hover {
+    color: #ffffff;
+    background: #004ab5;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#sub:hover {
+    color: #ffffff;
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.success {
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: auto;
+    background-color: green;
+}
+
+.errors {
+    display: none;
+    font-size: 15pt;
+}
+
+.currency {
+    z-index: 1;
+    position: fixed;
+    top: 5px;
+    left: 15px;
+    color: white;
+    font-size: 18pt;
+    letter-spacing: 2px;
+}
+#loginerror,#paserror,#farmerror,#mailerror{
+    display: none;
+    color: red;
+}
+.currency > p {
+    text-shadow: black 1px 1px 0, black -1px -1px 0,
+    black -1px 1px 0, black 1px -1px 0;
+}
+
+.currency > p > img {
+    width: 30px;
+}
+
+#exchanged {
+    width: 100%;
+    font-size: 15pt;
+    text-align: center;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+/**
+ HEADER
+**/
+.user {
+    position: fixed;
+    top: 15px;
+    right: 25px;
+    font-size: 20pt;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    border-color: black;
+    border-style: solid;
+    z-index: 1;
+}
+
+.user img {
+    width: 25px;
+    height: 25px;
+    margin: 2px;
+}
+
+.user a {
+    text-decoration: none;
+    color: black;
+}
+
+.image {
+    margin-top: 5px;
+    width: 100%;
+
+}
+
+.image img {
+    height: 15%;
+    width: 15%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.register {
+
+    position: absolute;
+    right: 25px;
+    top: 0;
+}
+
+.register > button {
+    border-radius: 10px;
+    color: #ffffff;
+    background: #016fff;
+    text-decoration: none;
+    border-color: white;
+    -webkit-border-radius: 31;
+    -moz-border-radius: 31;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border:none;
+}
+
+.register > button:hover {
+    color: #ffffff;
+    background: #004ab5;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.Name {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: 30pt;
+}
+
+/**
+ Menu
+**/
+
+.menu {
+    display: block;
+    margin-bottom: 5%;
+
+
+}
+
+.menu > ul {
+    padding: 4px;
+    text-align: center;
+}
+
+.menu > ul > li {
+    list-style-type: none;
+    display: inline;
+    padding: 3px;
+    margin-right: 10px;
+}
+
+.button {
+    color: black;
+    width: 40%;
+    text-decoration: none;
+    background: white;
+    border-radius: 25px;
+    text-align: center;
+    border-style: ridge;
+    border-color: grey;
+    border-width: 0px;
+    margin-top: 5px;
+}
+
+a.button {
+    padding: 6px 18px 6px 18px;
+    font-size: 20pt;
+}
+
+.button:hover {
+    cursor: pointer;
+    border-color: black;
+    background-color: #ffa130;
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+}
+.drop{
+    display: inline;
+}
+.dropbtn{
+    padding: 6px 18px 6px 18px;
+    font-size: 20pt;
+}
+.dropcontent{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 15px;
+}
+.dropcontent a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 15px;
+}
+.drop:hover .dropcontent{
+    display: inline;
+    margin: 2px;
+}
+.drop:hover .dropbtn{
+    background-color: #ffa130;
+}
+.dropcontent a:hover{
+    background-color: #ffa130;
+}
+/**
+Preloader
+**/
+.preloader:not(.done){
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: #3498db;
+    transition: 1s all;
+    opacity: 1;
+    visibility: visible;
+}
+.preloader:not(.done) > .loader{
+    width: 75px;
+    height: 75px;
+    border: 10px solid white;
+    border-radius: 50%;
+    border-top-color: #004bff;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    animation: 2s spin infinite linear;
+}
+.preloader{
+    opacity: 0;
+    visibility: hidden;
+}
+@keyframes spin {
+    from{
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+}
+
+/**
+ Content
+**/
+ol.top{
+    counter-reset: num;
+}
+
+ol.top > li{
+    list-style: none;
+}
+
+ol.top > li:before {
+    counter-increment: num;
+    content: counter(num);
+    color: white;
+    background: #007bff;
+    display: inline-block;
+    text-align: center;
+    margin: 5px 10px;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+}
+.profile {
+    text-align: left;
+}
+.errors404{
+font-size:35pt;
+text-align: center;
+}
+.mas {
+    display: block;
+    text-align: center;
+    font-size: 25pt;
+}
+
+.mas > p {
+    background: white;
+    font-size: 20pt;
+    border-radius: 50px;
+    border-width: 3px;
+    padding: 5%;
+}
+.mas > p > span{
+    display: block;
+    font-size: 100pt;
+}
+.para{
+    background: white;
+    font-size: 20pt;
+    border-radius: 50px;
+    border-width: 3px;
+    padding: 5%;
+    margin-bottom: 10px;
+}
+.para>ul{
+    text-align: left;
+    list-style-type: none;
+    display: inline;
+
+}
+.game {
+    background: white;
+    margin-bottom: 10px;
+}
+.garden {
+    width: 100%;
+    background-color: #0089fb;
+}
+.garden_bets .bet {
+    display: block;
+    float: left;
+    width: 10%;
+    text-align: center;
+    font-size: 33px;
+    opacity: .5;
+}
+.garden_stf {
+    width: 100%;
+    padding: 15px;
+    background-color: #0089fb;
+}
+#collect-game{
+    display: none;
+}
+#reload-game{
+    display: none;
+}
+#result-game{
+    width: 100%;
+    font-size: 15pt;
+    text-align: center;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.btn-reload {
+    background-image: url(../../img/esc.png);
+    background-size: cover;
+    width: 26px;
+    height: 26px;
+    flex: none!important;
+    margin-left: 15pt;
+
+}
+.btn-reload:hover {
+    border:0px!important;
+    color:#0089fb;
+    background-color: #004bff;
+    flex: none!important;
+}
+p.rate-name {
+    margin:0px;
+    line-height: 28px;
+    font-size: 15pt;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    display: inline-block;
+}
+#sum {
+    color:black;
+    border:1px black solid;
+}
+#sum:hover{
+    border-color: #fff3fc;
+    background-color: #117a8b!important;
+}
+.btn-bet>button,.btn-start{
+    color:black;
+}
+.game-cells {
+    width: 100%;
+    height: 500px;
+}
+.game-cell{
+    display: block;
+    width: 100%;
+    min-height: 90px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255,255,255,.3);
+    border-collapse: collapse;
+    background: rgba(0,0,0,.3);
+}
+.game-row{
+    display:block;
+    width: 10%;
+    float: left;
+    box-sizing: border-box;
+    border-collapse: collapse;
+}
+.info-game>p{
+margin-bottom: 0;
+}
+.info-game{
+    display: none;
+}
+.hash{
+    font-size: smaller;
+    margin: 0;
+    padding: 0;
+}
+.row-active>.game-cell{
+    border: 1px solid black;
+    background: rgb(197, 255, 255);
+}
+.row-active>.game-cell:hover{
+    background: rgba(0,0,0,.3);
+    border: 1px solid black;
+}
+.row-suc>.game-cell{
+    background: rgba(89, 255, 80, 0.37);
+    border: 1px solid rgba(48, 48, 48, 0.29);
+}
+.row-lose>.game-cell{
+    background: rgba(255, 1, 13, 0.58);
+    border: 1px solid rgba(48, 48, 48, 0.29);
+}
+.mine {
+    width: 100%;
+    position: sticky;
+    top: 100%;
+}
+/**
+ Footer
+**/
+.footer {
+    width: 100%;
+}
+
+.footer p {
+    text-align: center;
+    font-size: 25pt;
+    padding-top: 5px;
+    height: auto;
+}

@@ -1,0 +1,31 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+.regist {
+    width: 350px;
+    height: auto;
+    background-color: white;
+    position: fixed;
+    top: 32%;
+    left: 38%;
+    border: 5px solid black;
+    border-radius: 50px;
+    padding: 10px;
+    font-size: 23pt;
+}
+.content {
+    width: 100%;
+    height: 100%;
+}
+.perek>button {
+    font-size: 25pt;
+    background-color: white;
+    border:none;
+    margin-left: 8px;
+}
+.perek>button:hover {
+    color: #03d3ff;
+    cursor: pointer;
+
+}

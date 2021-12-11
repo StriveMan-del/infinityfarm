@@ -1,0 +1,53 @@
+.img{
+   margin-left: 10px;
+}
+.shop {
+    font-size: 19pt;
+}
+img.tab {
+    width: 50%;
+    height: auto;
+    margin-top: 10px;
+}
+.shop{
+    text-align: -webkit-center;
+    width: 100%;
+
+}
+.buy {
+    font-size: 17pt;
+    background: white;
+    color: black;
+    border-radius: 21px;
+    border-color: white;
+    padding: 5px;
+    border-width: 2px;
+}
+.buy:hover {
+    background: #ffa12d;
+   border-style: solid;
+    border-color: black;
+    cursor: pointer;
+    border-width: 2px;
+}
+.pol {
+    width: 30%;
+    height: auto;
+    float: left;
+    background: white;
+    border-color: white;
+    border-style: solid;
+    border-radius: 10px;
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+#buyer{
+    width: 100%;
+    font-size: 15pt;
+    text-align: center;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
